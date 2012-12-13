@@ -17,7 +17,10 @@
 		30B92ED3167A240D00157E8D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30B92ED2167A240D00157E8D /* Default@2x.png */; };
 		30B92ED5167A240D00157E8D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30B92ED4167A240D00157E8D /* Default-568h@2x.png */; };
 		30B92ED8167A240D00157E8D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B92ED6167A240D00157E8D /* MainStoryboard.storyboard */; };
-		30B92EDB167A240D00157E8D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B92EDA167A240D00157E8D /* ViewController.m */; };
+		30B92EDB167A240D00157E8D /* CollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B92EDA167A240D00157E8D /* CollectionController.m */; };
+		30B92EE3167A255A00157E8D /* CollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B92EE2167A255A00157E8D /* CollectionViewLayout.m */; };
+		30B92EEA167A2DC300157E8D /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B92EE9167A2DC300157E8D /* CollectionViewCell.m */; };
+		30B92EEC167A2FBE00157E8D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30B92EEB167A2FBE00157E8D /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +38,13 @@
 		30B92ED2167A240D00157E8D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		30B92ED4167A240D00157E8D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		30B92ED7167A240D00157E8D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		30B92ED9167A240D00157E8D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		30B92EDA167A240D00157E8D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		30B92ED9167A240D00157E8D /* CollectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionController.h; sourceTree = "<group>"; };
+		30B92EDA167A240D00157E8D /* CollectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionController.m; sourceTree = "<group>"; };
+		30B92EE1167A255A00157E8D /* CollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewLayout.h; sourceTree = "<group>"; };
+		30B92EE2167A255A00157E8D /* CollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewLayout.m; sourceTree = "<group>"; };
+		30B92EE8167A2DC300157E8D /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		30B92EE9167A2DC300157E8D /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		30B92EEB167A2FBE00157E8D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B92EEC167A2FBE00157E8D /* QuartzCore.framework in Frameworks */,
 				30B92EBF167A240D00157E8D /* UIKit.framework in Frameworks */,
 				30B92EC1167A240D00157E8D /* Foundation.framework in Frameworks */,
 				30B92EC3167A240D00157E8D /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +82,7 @@
 		30B92EBD167A240D00157E8D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				30B92EEB167A2FBE00157E8D /* QuartzCore.framework */,
 				30B92EBE167A240D00157E8D /* UIKit.framework */,
 				30B92EC0167A240D00157E8D /* Foundation.framework */,
 				30B92EC2167A240D00157E8D /* CoreGraphics.framework */,
@@ -86,8 +96,12 @@
 				30B92ECD167A240D00157E8D /* AppDelegate.h */,
 				30B92ECE167A240D00157E8D /* AppDelegate.m */,
 				30B92ED6167A240D00157E8D /* MainStoryboard.storyboard */,
-				30B92ED9167A240D00157E8D /* ViewController.h */,
-				30B92EDA167A240D00157E8D /* ViewController.m */,
+				30B92EE8167A2DC300157E8D /* CollectionViewCell.h */,
+				30B92EE9167A2DC300157E8D /* CollectionViewCell.m */,
+				30B92ED9167A240D00157E8D /* CollectionController.h */,
+				30B92EDA167A240D00157E8D /* CollectionController.m */,
+				30B92EE1167A255A00157E8D /* CollectionViewLayout.h */,
+				30B92EE2167A255A00157E8D /* CollectionViewLayout.m */,
 				30B92EC5167A240D00157E8D /* Supporting Files */,
 			);
 			path = TAPGallery;
@@ -175,7 +189,9 @@
 			files = (
 				30B92ECB167A240D00157E8D /* main.m in Sources */,
 				30B92ECF167A240D00157E8D /* AppDelegate.m in Sources */,
-				30B92EDB167A240D00157E8D /* ViewController.m in Sources */,
+				30B92EDB167A240D00157E8D /* CollectionController.m in Sources */,
+				30B92EE3167A255A00157E8D /* CollectionViewLayout.m in Sources */,
+				30B92EEA167A2DC300157E8D /* CollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,10 +272,12 @@
 		30B92EDF167A240D00157E8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mike Smu (8H55D5VGA7)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TAPGallery/TAPGallery-Prefix.pch";
 				INFOPLIST_FILE = "TAPGallery/TAPGallery-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D1F8AF1D-9593-41B9-8C0B-62066F01B7BC";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
